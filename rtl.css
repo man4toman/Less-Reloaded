@@ -1,0 +1,191 @@
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+button,
+input,
+select,
+textarea,
+table,
+ol,
+ul,
+header #brand h1 {
+  font-family: tahoma;
+}
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+button,
+input,
+select,
+textarea,
+table,
+ol,
+ul,
+.post-meta {
+  direction: rtl;
+  text-align: right
+}
+ul,
+ol {
+  margin: 0 3em 1.5em 0;
+}
+ul ul,
+ol ol,
+ul ol,
+ol ul {
+  margin-left: 0;
+  margin-right: 1.5em;
+}
+header .gravatar {
+  float: left;
+}
+header #brand {
+  float: right;
+}
+header nav {
+  float: right;
+}
+header nav ul li {
+  float: right;
+  margin: 2px 0 0 6px;
+  font-weight: normal;
+  color: #888888
+}
+
+header nav ul li a{
+  color: #007998;
+  font-weight: bold;
+}
+.post-meta,
+.post-meta .comments-link a{
+  color: #007998;
+}
+.post-meta .separator{
+  font-weight: normal;
+  color: #888888;
+}
+.post-meta,
+.meta,
+#pagination,
+.the-content{
+  font-weight: bold;
+}
+.the-content{
+  font-size: 1.6rem;
+}
+article .the-content p{
+  text-align: justify;
+}
+article .title{
+  font-size: 3rem;
+}
+article .meta{
+  letter-spacing: 0;
+  font-size: 1.5rem;
+  width: 100%;
+  text-align: left
+}
+article .meta div {
+  float: right;
+}
+article .meta .category,
+article .meta .tags{
+  width: 100%;
+  font-weight: normal;
+  color: #787878
+}
+article .meta .category a,
+article .meta .tags a{
+  font-weight: bold;
+}
+article .meta .tags {
+  font-size: 1.3rem!important
+}
+article .meta .category{
+  margin-bottom: 10px;
+}
+article .meta .post-categories li {
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+#pagination .past-page {
+  float: left;
+}
+#pagination .next-page {
+  float: right;
+}
+.commentlist .comment {
+  margin: 0 50px 40px 0;
+}
+.commentlist .comment-author {
+  float: right;
+  margin-right: 0;
+  margin-left: 10px;
+}
+.commentlist .comment-author img {
+  left: 0;
+  right: -50px;
+}
+#pagination .past-page {
+    float: right;
+}
+#pagination .next-page {
+    float: left;
+}
+.site-info {
+  direction: rtl;
+}
+article .the-content code{
+  direction: ltr;
+  text-align: left
+}
+@media (max-width: 767px) {
+  header .gravatar
+   {
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+  }
+  header #brand
+   {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  header #brand h1{
+    text-align: center;
+  }
+  header nav
+   {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    direction: rtl;
+  }
+  header nav ul{
+    text-align: center
+  }
+  header nav ul li
+  {
+    float: none;
+    display: inline-block
+  }
+  article .the-content p
+  {
+    text-align: right;
+  }
+}
