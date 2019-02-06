@@ -16,7 +16,7 @@ Text Domain: less-reloaded
 
 == Description ==
 
-A simple minimal WordPress theme built with only what is needed to survive
+A simple minimal WordPress theme built with only what is needed to survive 
 
 Less is a super minimal theme, both front end and back end. adding no bloat whatesover. It only uses the minimum requirements that WordPress has, a stylesheet, screenshot and the index page.
 Less Reloaded is modefied version that works with WordPress 5 and it's translation ready and it support rtl.
