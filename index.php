@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width" />
 
 <link rel="profile" href="http://gmpg.org/xfn/11" />
-<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
 <?php wp_head(); ?>
 </head>
@@ -207,6 +206,19 @@
 
 	<?php } // end is_page(); ?>
 
+
+<?php
+	/*-----------------------------------------------------------------------------------*/
+	/* Start 404 Page
+	/*-----------------------------------------------------------------------------------*/
+	
+	if( is_404()) {
+?>
+				<article class="post error">
+					<h1 class="404"><?php esc_html_e( 'Nothing posted yet', 'less-reloaded' ); ?></h1>
+				</article>
+	<?php } // end is_404(); ?>
+
 		</div><!-- #content .site-content -->
 	</div><!-- #primary .content-area -->
 
@@ -220,7 +232,6 @@
 
 <footer class="site-footer" role="contentinfo">
 	<div class="site-info container">
-		<?php do_action( 'break_credits' ); ?>
 		<a href="https://wordpress.org/" title="<?php esc_html_e( 'A Semantic Personal Publishing Platform', 'less-reloaded'); ?>" rel="generator"><?php esc_html_e( 'Proudly powered by WordPress', 'less-reloaded'); ?></a>
 		<span class="sep"> <?php esc_html_e( 'and', 'less-reloaded' ); ?> </span>
 		<?php esc_html_e( 'Less Reloaded by Morteza Geransayeh', 'less-reloaded'); ?>

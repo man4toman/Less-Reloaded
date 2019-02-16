@@ -37,13 +37,11 @@ register_nav_menus(
 function less_scripts()  { 
 
 	// theme styles
+    if (!is_admin()) {
+        wp_register_style('less-Arvo', 'https://fonts.googleapis.com/css?family=Arvo:400,700', array(), null, 'all');
+        wp_enqueue_style('less-Arvo');
+    }
 	wp_enqueue_style( 'less-style', get_template_directory_uri() . '/style.css', '10000', 'all' );
-			
-	// add fitvid
-	wp_enqueue_script( 'less-fitvid', get_template_directory_uri() . '/js/jquery.fitvids.js', array( 'jquery' ), LESS_VERSION, true );
-	
-	// add theme scripts
-	wp_enqueue_script( 'less', get_template_directory_uri() . '/js/theme.min.js', array(), LESS_VERSION, true );
 	
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -51,3 +49,15 @@ function less_scripts()  {
   
 }
 add_action( 'wp_enqueue_scripts', 'less_scripts' );
+
+
+/*-----------------------------------------------------------------------------------*/
+/* Add a pingback url to header
+/*-----------------------------------------------------------------------------------*/
+
+function less_pingback_header() {
+	if ( is_singular() && pings_open() ) {
+		printf( '<link rel="pingback" href="%s">', esc_url( get_bloginfo( 'pingback_url' ) ) );
+	}
+}
+add_action( 'wp_head', 'less_pingback_header' );
